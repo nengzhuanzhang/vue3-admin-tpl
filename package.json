@@ -11,9 +11,11 @@
     "fix": "eslint src --fix",
     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
     "prepare": "husky install",
-    "commitlint": "commitlint --config commitlint.config.cjs -e -V"
+    "commitlint": "commitlint --config commitlint.config.cjs -e -V",
+    "preinstall": "node ./scripts/preinstall.js"
   },
   "dependencies": {
+    "element-plus": "^2.6.2",
     "vue": "^3.4.21"
   },
   "devDependencies": {
