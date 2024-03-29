@@ -1,14 +1,17 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-const testFun = () => {
-  console.log(1)
-}
-testFun()
+import HelloWorld from '@/components/HelloWorld.vue'
+import { Edit } from '@element-plus/icons-vue'
 </script>
 
 <template>
   <div>测试格式化</div>
   <HelloWorld msg="Vite + Vue" />
+  <el-button type="primary" :icon="Edit" circle />
+  <el-button type="primary">Primary</el-button>
+
+  <svg>
+    <use xlink:href="#icon-dingding"></use>
+  </svg>
 </template>
 
 <style scoped>
