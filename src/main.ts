@@ -8,10 +8,13 @@ import 'virtual:svg-icons-register'
 
 // @ts-ignore
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+// 引入自定义组件，全局注册
+import globalComponent from '@/components/index'
 
 const app = createApp(App)
 app
   .use(ElementPlus, {
     locale: zhCn,
   })
+  .use(globalComponent)
   .mount('#app')
