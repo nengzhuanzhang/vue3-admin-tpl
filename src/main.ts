@@ -10,6 +10,8 @@ import 'virtual:svg-icons-register'
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 // 引入自定义组件，全局注册
 import globalComponent from '@/components/index'
+// 引入scss
+import '@/styles/index.scss'
 
 const app = createApp(App)
 app
